@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <h1>Locked Door Challenge</h1>
+        <p><a href="doors-challenge.html">Return to Challenge Description</a></p>
+        <h2>Part 2: Collecting Keys</h2>
+
+        <p>
+            In this challenge, you will add code that detects when the player
+            has stepped on to a key tile, removes the key tile from the map, and
+            tracks the number of keys the player has collected.
+        </p>
+
+        <h2>Requirements</h2>
+
+        <ol>
+            <li>Add at least one key to your maze</li>
+            <li>The number of keys the player currently is visible at all times</li>
+            <li>
+                When the player steps on the key:
+                <ul>
+                    <li>The key is removed from the map</li>
+                    <li>A message stating, the player collected a key is displayed.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <p>
+            <b>Note:</b> Your message should be specific to your game. If your
+            "key" is a screwdriver <b>or</b> a banana, feel free to adjust the
+            message to meet your theme.
+        </p>
+
+        <p> When you have completed it, your project should work similar to the
+            one below:</p>
+        <iframe class="preview" src="examples/maze-collect-keys/index.html"></iframe>
+
+        <h2>Hints</h2>
+
+        <h3>Initialize a Keys Variable</h3>
+        <p>
+            In your current project, you initialize the start position of your player using the
+            <code>x</code> and <code>y</code> variables at the start of the
+            file. You will need to track the number of keys the player is
+            holding. What would be a good name for your variable? In your game,
+            what is the initial value?
+        </p>
+
+        <img src="imgs/initialize-variables.png">
+
+        <h3>Display the Number of Keys</h3>
+
+        <p>
+
+            To display the number of keys your player is currently carrying, you can use the
+            <code>print</code> function. Be sure you add your code <b>AFTER</b> you
+            have cleared the screen and drawn your map. For example, the following code
+            displays the players current position in the top right corner of the screen:
+
+        </p>
+
+        <img src="imgs/print.png">
+
+        <p>What should your text be? What position should it be displayed? What color should it be?</p>
+
+        <h3>Collecting the Key</h3>
+        <p>
+            Using the <code>mget</code> function, you are able to get the id of
+            a tile on the map. Similarly, there is an <code>mset</code> function
+            that allows you to set the id of a tile on the map.
+
+            The code below is an incomplete implementation of the key collection
+            code. Can you finish it?
+        </p>
+
+        <img src="imgs/collect-key-code.png">
+
+        <h2>What's Next: </h2>
+        <p>
+            Now that your player is able to collect keys, you can turn your
+            attention to unlocking the doors! In the next part of the challenge,
+            you will write code that checks if the player has a key. If they do,
+            the door will be removed from the map and the number of keys the
+            player has will be reduced.
+        </p>
+        <h3><a href="unlocking-doors.html">Part 3: Unlocking Doors</a></h3>
+
+    </div>
+
+</body>
+
+</html>

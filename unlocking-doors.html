@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <h1>Locked Door Challenge</h1>
+        <p><a href="doors-challenge.html">Return to Challenge Description</a></p>
+        <h2>Part 3: Unlocking Doors</h2>
+
+        <p>
+            In this challenge, you will add code that checks if the player has a
+            key when they walk into a door. If they do, the door will be removed
+            and the number of keys they are carrying will be reduced by 1.
+        </p>
+
+        <h2>Requirements</h2>
+
+        <ol>
+            <li>When a player steps on a wall tile:</li>
+            <ul>
+                <li>If they have 0 keys, display the door is locked and stop their movement</li>
+                <li>
+                    If they have at least 1 key
+                    <ul>
+                        <li>Remove the door from the map</li>
+                        <li>Reduce the keys the player is carrying by 1</li>
+                        <li>Display a message stating the player unlocks the door</li>
+                    </ul>
+                </li>
+
+            </ul>
+            </li>
+        </ol>
+
+        <p>
+            <b>Note:</b> Your message should be specific to your game. Feel free
+            to adjust the message to meet your theme.
+        </p>
+
+        <p> When you have completed it, your project should work similar to the
+            one below:</p>
+        <iframe class="preview" src="examples/maze-key-starter/index.html"></iframe>
+
+        <h2>Hints</h2>
+
+        <h3>Updating Door Condition</h3>
+        <p>
+            In your current project, you have an <code>if</code> statement in
+            your code that prevents the player from moving through the door. 
+            You can add multiple conditions to an if statement using the <code>and</code>
+            keyword. The code below shows an <code>if</code> statement that checks if
+            the player is touching a door <code>AND</code> has 0 keys. Can you update
+            your code to do the same? If you're successful, you should be able to move
+            through doors if you have at least 1 key.
+        </p>
+
+        <img src="imgs/use-and.png">
+
+        <h3>Opening Doors</h3>
+
+        <p>
+
+            Next, you need to add code to your game that checks if the player
+            has at least 1 key. This can be done using the greater than
+            operator. More specifically you can use the code: <code>keys >
+            0</code> which will be <b>true</b> if the <code>keys</code> variable
+            is greater than 0.
+
+        </p>
+
+        <p>
+            The code below is incomplete. Can you finish it?
+        </p>
+
+        <img src="imgs/open-door-code.png">
+
+        <h2>What's Next: </h2>
+        <p>
+            If all went well, you are now able to add doors and keys inside of
+            your maze! Using these techniques, you could design a variety of
+            additional elements for your game. Feel free to come up with your
+            own ideas or, if you would like, you can use one or more of the
+            ideas below:
+        </p>
+
+        <ul>
+            <li>
+                Add an Exit: Add a tile to the game that, when it is reached
+                displays the message "You win!"
+            </li>
+            <li>
+                Button/Switches: When the player steps on a button, use
+                <code>mset</code> to change the map. This could be used to
+                create secret hallways, reveal keys, or even add traps to the
+                maze!
+            </li>
+            <li>
+                Portals: When a players steps on a portal, they are teleported
+                to another part of the map!
+            </li>
+            <li>
+                Timer: Add a count down timer to the game that is displayed at
+                the top of the screen. When the timer reaches 0, display a "Game
+                Over" message.
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
