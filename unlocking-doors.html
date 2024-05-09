@@ -27,7 +27,6 @@
                     <ul>
                         <li>Remove the door from the map</li>
                         <li>Reduce the keys the player is carrying by 1</li>
-                        <li>Display a message stating the player unlocks the door</li>
                     </ul>
                 </li>
 
@@ -35,10 +34,6 @@
             </li>
         </ol>
 
-        <p>
-            <b>Note:</b> Your message should be specific to your game. Feel free
-            to adjust the message to meet your theme.
-        </p>
 
         <p> When you have completed it, your project should work similar to the
             one below:</p>
@@ -46,26 +41,12 @@
 
         <h2>Hints</h2>
 
-        <h3>Updating Door Condition</h3>
-        <p>
-            In your current project, you have an <code>if</code> statement in
-            your code that prevents the player from moving through the door. 
-            You can add multiple conditions to an if statement using the <code>and</code>
-            keyword. The code below shows an <code>if</code> statement that checks if
-            the player is touching a door <code>AND</code> has 0 keys. Can you update
-            your code to do the same? If you're successful, you should be able to move
-            through doors if you have at least 1 key.
-        </p>
-
-        <img src="imgs/use-and.png">
-
         <h3>Opening Doors</h3>
 
         <p>
 
-            Next, you need to add code to your game that checks if the player
-            has at least 1 key. This can be done using the greater than
-            operator. More specifically you can use the code: <code>keys >
+            Next, you need to add code to your game that checks if the player is touching a door AND has at least 1 key.
+            This can be done using the greater than operator. More specifically you can use the code: <code>keys >
             0</code> which will be <b>true</b> if the <code>keys</code> variable
             is greater than 0.
 
@@ -100,11 +81,6 @@
             <li>
                 Portals: When a players steps on a portal, they are teleported
                 to another part of the map!
-            </li>
-            <li>
-                Timer: Add a count down timer to the game that is displayed at
-                the top of the screen. When the timer reaches 0, display a "Game
-                Over" message.
             </li>
         </ul>
 
